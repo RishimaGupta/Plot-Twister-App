@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="70dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/homefragbg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/almendra_sc"
+            android:gravity="center"
+            android:text="Welcome!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvselect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select your genre:"
+            android:fontFamily="@font/almendra_sc"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnMystery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mystery"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="#F8E9D2"
+                    android:fontFamily="@font/almendra_sc"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/btnSciFi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sci-Fi"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="#F8E9D2"
+                    android:fontFamily="@font/almendra_sc"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/btnFantasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fantasy"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="#F8E9D2"
+                    android:fontFamily="@font/almendra_sc"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/btnHorror"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Horror"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="#F8E9D2"
+                    android:fontFamily="@font/almendra_sc"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/btnRomance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Romance"
+                    android:textColor="@android:color/black"
+                    android:backgroundTint="#F8E9D2"
+                    android:fontFamily="@font/almendra_sc"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!-- Optional Plot Element -->
+        <CheckBox
+            android:id="@+id/cbSupernatural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/almendra_sc"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Add a supernatural twist"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Button to Generate Plot -->
+        <Button
+            android:id="@+id/btnGeneratePlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Plot"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#D26C4A"
+            android:fontFamily="@font/almendra_sc"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <!-- Display Generated Plot -->
+        <TextView
+            android:id="@+id/tvGeneratedPlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your generated plot will appear here."
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:fontFamily="@font/almendra_sc"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#F9EAD3"
+            android:textColor="@android:color/black"/>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write Story"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#C95F3F"
+            android:fontFamily="@font/almendra_sc"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>

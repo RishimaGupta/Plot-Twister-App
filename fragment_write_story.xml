@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="70dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/writestorybg">
+
+    <!-- Story Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/almendra_sc"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:text="Your Story"
+        android:layout_marginBottom="10dp" />
+
+    <!-- EditText for Title -->
+    <EditText
+        android:id="@+id/editTextStoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Story Title"
+        android:fontFamily="@font/almendra_sc"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="15dp"
+        android:background="#E9C7C7" />
+
+    <!-- EditText for Story Content -->
+
+    <!-- SeekBar for Font Size -->
+    <EditText
+        android:id="@+id/editTextStoryContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#DCF8E3E3"
+        android:fontFamily="@font/almendra_sc"
+        android:gravity="top"
+        android:hint="Write your story here..."
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvFontSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adjust Font Size"
+        android:fontFamily="@font/almendra_sc"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp" />
+
+    <SeekBar
+        android:id="@+id/seekBarFontSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="30"
+        android:progress="10" />
+
+    <!-- Reminder Button -->
+    <Button
+        android:id="@+id/btnSetReminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Writing Reminder"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="#E5C34D5F"
+        android:fontFamily="@font/almendra_sc"
+        android:layout_marginTop="10dp" />
+
+    <!-- Stopwatch -->
+    <TextView
+        android:id="@+id/tvStopwatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnStartStopwatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#DAA496"
+            android:fontFamily="@font/almendra_sc"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnResetStopwatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#DAA496"
+            android:fontFamily="@font/almendra_sc"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <!-- Word Count -->
+    <Button
+        android:id="@+id/btnWordCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate Word Count"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:backgroundTint="#F2CD5A"
+        android:fontFamily="@font/almendra_sc"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/tvWordCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Word Count: 0"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/almendra_sc"
+        android:layout_marginTop="5dp" />
+
+    <!-- Buttons for Save, Clear, Show -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnSaveStory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#E5C34D5F"
+            android:fontFamily="@font/almendra_sc"
+            android:layout_weight="1"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnClearStory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#E5C34D5F"
+            android:fontFamily="@font/almendra_sc"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginStart="10dp" />
+
+        <Button
+            android:id="@+id/btnShowStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#E5C34D5F"
+            android:fontFamily="@font/almendra_sc"
+            android:text="Show Saved" />
+
+        <Button
+            android:id="@+id/btnShareStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:backgroundTint="#E5C34D5F"
+            android:fontFamily="@font/almendra_sc"
+            android:text="Share Story" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
